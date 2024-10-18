@@ -26,6 +26,8 @@ void mouseClicked(){ //makes bacteria come back
   for (int i = 0; i<bob.length; i++) {
     bob[i].show();
     bob[i].walk();
+    bob[i].x= (int)(Math.random()*680);
+    bob[i].y= (int)(Math.random()*680);
     bob[i].alive=true;
   }
 }
