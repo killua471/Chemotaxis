@@ -54,13 +54,13 @@ class Bacteria
   void walk() {
     if (dist(mouseX, mouseY, x, y)<130) {//run away
       if (mouseX>x) {
-        x = x+ (int)(Math.random()*5)-4;
+        x = x+ (int)(Math.random()*5)-3;
       } else {
         x = x+ (int)(Math.random()*5)-1;
       }
 
       if (mouseY>y) {
-        y = y+ (int)(Math.random()*5)-4;
+        y = y+ (int)(Math.random()*5)-3;
       } else {
         y = y+ (int)(Math.random()*5)-1;
       }//end of run away
