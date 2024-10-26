@@ -28,7 +28,6 @@ void draw()
       if (bob[i].alive==true) {
         if (dist(mouseX, mouseY, bob[i].x, bob[i].y)<30) {//make bacteria disappear
           bob[i] = null;
-          System.out.println(count());
         }
       }
     }
@@ -51,8 +50,7 @@ void reproduce(int onex, int oney) {
     for (int i = 0; i < max; i++) {
       if (bob[i] == null) { // Find an empty slot
         bob[i] = new Bacteria(onex, oney);
-        x++; // Increment bacteria count
-        System.out.println("Bacteria count: " + count());
+        x++;
         break;
       }
     }
@@ -70,7 +68,6 @@ public int count() {
 }
 
 void mouseClicked() { //makes bacteria come back
-  System.out.println(count());
   x=50;
   for (int i = 0; i < max; i++) {
     bob[i] = null;
